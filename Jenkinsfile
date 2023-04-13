@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'mv source/* /var/www/html'
+        sh 'mv source/* /usr/local/apache2/htdocs/'
       }
     }
   }
