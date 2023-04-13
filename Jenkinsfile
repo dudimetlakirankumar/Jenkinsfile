@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'cp source/*' '/var/www/html/'
+        sh 'mv . /var/www/html/'
       }
     }
   }
