@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'ssh mv source/* /usr/local/apache2/htdocs/'
+        sh 'mv source/* /usr/local/apache2/htdocs/'
       }
     }
   }
