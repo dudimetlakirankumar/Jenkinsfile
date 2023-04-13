@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'ssh -o StrictHostKeyChecking=no mv source/* /usr/local/apache2/htdocs/'
+        sh 'ssh mv source/* /usr/local/apache2/htdocs/'
       }
     }
   }
